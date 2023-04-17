@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оформление заказа</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="icon" href="img/first_scrin/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/form.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" id="nav">
+            <div class="container">
+                <a class="header_logo" href="index.html">
+                    <div class="logo">
+                        <img src="img/first_scrin/icon.png" alt="Glovia Clothes">
+                    </div>
+                    <div class="header__title">
+                        <h5>
+                            Glovia Clothes
+                        </h5>
+                        Создай свою эстетику
+                    </div>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Популярное</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Каталог</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">О нас</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Категории товаров
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Аксессуары</a></li>
+                                <li><a class="dropdown-item" href="#">Обувь</a></li>
+                                <li><a class="dropdown-item" href="#">Футболки</a></li>
+                                <li><a class="dropdown-item" href="#">Юбки</a></li>
+                                <li><a class="dropdown-item" href="#">Платья</a></li>
+                                <li><a class="dropdown-item" href="#">Брюки</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Другое</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <a class="header__basket" href="form.html">
+                        <div class="basket__img">
+                            <img src="img/first_scrin/basket.png" alt="basket">
+                        </div>
+                        <div class="header__prise">
+                            1999 р.
+                        </div>
+                    </a>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Поиск" aria-label="Search">
+                        <button class="btn btn-light" type="submit"><i class="bi bi-search"></i></button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div class="container">
+            <h1>Корзина</h1>
+            <form class="main-form" action="https://ya.ru" name="main" method="post">
+                <div class="row align-items-top">
+                    <div class="col-md-7">
+                        <div class="card mb-3 product-card">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="img/form/Group 15.png" class="img-fluid rounded-start pr" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Юбка мини джинсовая</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural
+                                            lead-in to additional content. This content is a little bit longer.</p>
+                                        <p class="card-price">1999 р.</p>
+                                        <div class="row g-0">
+                                            <div class="col-md-3">
+                                                <select class="form-select size" aria-label="Default select example" name="size">
+                                                    <option selected>Размер</option>
+                                                    <option value="1">S</option>
+                                                    <option value="2">M</option>
+                                                    <option value="3">L</option>
+                                                    <option value="4">XL</option>
+                                                    <option value="5">XXL</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-7 quantity">
+                                                <label for="exampleInputPassword1" class="form-label">Количество</label>
+                                                <input type="number" class="form-control counter" name="quantity1"
+                                                    id="exampleInputPassword1" value="1" min="1" max="10">
+                                            </div>
+                                            <div class="col-md-2">
+                                                <button type="button" class="btn btn-light trash" name="trash1">
+                                                    <i class="bi bi-trash-fill"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-3 product-card">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="img/form/Group 16.png" class="img-fluid rounded-start pr" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Платье голубое “Фантазия”</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural
+                                            lead-in to additional content. This content is a little bit longer.</p>
+                                        <p class="card-price">4399 р.</p>
+                                        <div class="row g-0">
+                                            <div class="col-md-3">
+                                                <select class="form-select size" aria-label="Default select example" name="size">
+                                                    <option selected>Размер</option>
+                                                    <option value="1">S</option>
+                                                    <option value="2">M</option>
+                                                    <option value="3">L</option>
+                                                    <option value="4">XL</option>
+                                                    <option value="5">XXL</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-7 quantity">
+                                                <label for="exampleInputPassword1" class="form-label">Количество</label>
+                                                <input type="number" class="form-control counter" name="quantity2"
+                                                    id="exampleInputPassword1" value="1" min="1" max="10">
+                                            </div>
+                                            <div class="col-md-2">
+                                                <button type="button" class="btn btn-light trash" name="trash2"><i
+                                                        class="bi bi-trash-fill"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-3 empty">
+                            <div class="empty_basket">
+                                <img src="img/form/basket.png" class="img-fluid rounded-start pr" alt="...">
+                            </div>
+                        </div>
+                        <div class="common-price">
+                            <h4>Итого:</h4>
+                            <div class="price">
+                                0р
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="ordering">
+                            <h2>Оформление заказа</h2>
+                            <h6 class="warning">Для оформления заказа добавьте товары в корзину!</h6>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Email адрес</label>
+                                <div class="group">
+                                    <input type="email" class="form-control email" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" name="email" placeholder="Введите email">
+                                    <i class="bi"></i>
+                                    <div class="error-message"></div>
+                                </div>
+                                <label for="inputTel" class="form-label">Номер телефона</label>
+                                <div class="group">
+                                    <input type="tel" class="form-control tel phone" id="inputTel" aria-describedby="phoneHelp"
+                                        placeholder="Введите телефон" name="phone">
+                                    <i class="bi"></i>
+                                    <div class="error-message"></div>
+                                </div>
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="check1" name="check">
+                                <label class="form-check-label" for="exampleCheck1">Самовывоз из магазина</label>
+                                <div class="group-choose">
+                                    <select class="form-select addres" aria-label="Default select example" name="deliveryAdress">
+                                        <option selected>Выберите адрес доставки</option>
+                                        <option value="1">Филиал №1</option>
+                                        <option value="2">Филиал №2</option>
+                                        <option value="3">Филиал №3</option>
+                                        <option value="4">Филиал №4</option>
+                                    </select>
+                                    <div class="error-message"></div>
+                                </div>
+                            </div>
+                            <div class="form-pay">
+                                <h5>Способ оплаты:</h5>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadio"
+                                        id="flexRadioDefault1">
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                        По карте
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadio"
+                                        id="flexRadioDefault2" checked>
+                                    <label class="form-check-label" for="flexRadioDefault2">
+                                        Наличными при получении
+                                    </label>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary" name="btn">Продолжить</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="container footer__container">
+            <div class="footer__logo">
+                <div class="footer__img">
+                    <img src="img/footer/logo.png" alt="logo">
+                </div>
+                <div class="footer__text">
+                    <div class="footer__title">
+                        Glovia Clothes
+                    </div>
+                    <div class="footer__subtitle">
+                        Создай свою эстетику
+                    </div>
+                </div>
+            </div>
+            <div class="footer__number">
+                +7(926)-342-56-91
+            </div>
+            <div class="footer__arrow">
+                <a href="#" class="footer__link">
+                    <img src="img/footer/arrow.png" alt="arrow">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/basket.js"></script>
+    <script src="js/form.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

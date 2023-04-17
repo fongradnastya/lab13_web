@@ -1,0 +1,198 @@
+body {
+  color: #5D6268;
+}
+
+/* common */
+h2 {
+  margin-bottom: 30px;
+}
+
+section {
+  padding: 40px;
+  margin: 30px 0;
+}
+
+/* header */
+#nav {
+  background: #418E97 !important;
+}
+#nav a:not(.dropdown-item) {
+  color: #fff !important;
+  text-decoration: none;
+}
+
+.header__basket {
+  display: flex;
+  color: #fff;
+  margin-right: 20px;
+}
+
+.basket__img {
+  margin-right: 10px;
+}
+
+.header_logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.logo {
+  margin-right: 15px;
+}
+
+.header__title h5 {
+  margin-bottom: -5px;
+}
+
+/* popup */
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(100, 0, 100, 0.5);
+}
+
+.popup__card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 600px;
+  border-radius: 20px;
+  color: #fff;
+  padding: 20px;
+  transform: translate(50%, 50%);
+}
+
+/* footer */
+footer {
+  background: #49335E;
+  padding: 40px 300px;
+  color: #fff;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__img {
+  margin-right: 15px;
+}
+
+.footer__title {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.footer__arrow {
+  margin-left: 120px;
+}
+
+.footer__number {
+  font-size: 18px;
+}
+
+/* form */
+h2 {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+h1 {
+  margin: 20px 0 40px 0;
+  text-align: center;
+}
+
+.form-pay {
+  margin-bottom: 20px;
+}
+
+.trash {
+  margin-left: 20px;
+}
+
+.pr {
+  height: 100%;
+  padding: 15px 0 15px 15px;
+}
+
+.quantity {
+  display: flex;
+  align-items: center;
+}
+
+.quantity label {
+  margin: 0 10px;
+}
+
+.ordering {
+  margin-left: 50px;
+}
+
+.common-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 150px;
+}
+
+/* for js */
+.empty {
+  display: none;
+}
+
+.empty_basket {
+  padding-left: 10%;
+}
+
+.warning {
+  display: none;
+}
+
+.group-choose {
+  display: none;
+}
+
+.group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.bi-check-circle-fill {
+  position: absolute;
+  top: 8px;
+  right: 15px;
+  color: #53ed8c;
+}
+
+.bi-x-circle-fill {
+  position: absolute;
+  top: 8px;
+  right: 15px;
+  color: rgb(228, 112, 112);
+}
+
+.input-success {
+  border: 1px solid #53ed8c;
+}
+
+.input-mistake {
+  border: 1px solid rgb(228, 112, 112);
+}
+
+.error-message {
+  color: rgb(228, 112, 112);
+  font-size: 12px;
+  padding-left: 10px;
+}/*# sourceMappingURL=form.css.map */

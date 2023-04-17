@@ -1,0 +1,100 @@
+@import "base.scss";
+
+/* form */
+
+h2{
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+h1{
+    margin: 20px 0 40px 0;
+    text-align: center;
+}
+
+.form-pay{
+    margin-bottom: 20px;
+}
+
+.trash{
+    margin-left: 20px;
+}
+
+.pr{
+    height: 100%;
+    padding: 15px 0 15px 15px;
+}
+
+.quantity{
+    display: flex;
+    align-items: center;
+}
+
+.quantity label{
+    margin: 0 10px;
+}
+
+.ordering{
+    margin-left: 50px;
+}
+
+.common-price{
+    @include flexible();
+    max-width: 150px;
+}
+
+/* for js */
+
+.empty{
+    display: none;
+}
+
+.empty_basket{
+    padding-left: 10%;
+}
+
+.warning{
+    display: none;
+    
+}
+
+.group-choose{
+    display: none;
+}
+
+.group{
+    position: relative;
+    margin-bottom: 20px;
+}
+
+$success: #53ed8c;
+
+$mistake: rgb(228, 112, 112);
+
+.bi-check-circle-fill{
+    position: absolute;
+    top: 8px;
+    right: 15px;
+    color: $success;
+}
+
+.bi-x-circle-fill{
+    position: absolute;
+    top: 8px;
+    right: 15px;
+    color: $mistake;
+}
+
+.input-success{
+    border: 1px solid $success;
+}
+
+.input-mistake{
+    border: 1px solid $mistake;
+}
+
+.error-message{
+    color: $mistake;
+    font-size: 12px;
+    padding-left: 10px;
+}
