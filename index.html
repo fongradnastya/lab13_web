@@ -74,10 +74,13 @@
               1999 р.
             </div>
           </a>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Поиск" aria-label="Search">
-            <button class="btn btn-light" type="submit"><i class="bi bi-search"></i></button>
-          </form>
+          <div class="user">
+            <img src="img/first_scrin/user.png" alt="user image">
+            <div class="user__name"></div>
+            <button class="btn btn-light">Выйти</button>
+          </div>
+          <button class="btn btn-light open-popup" type="submit">Войти</button>
+          
         </div>
       </div>
     </nav>
@@ -495,7 +498,22 @@
       <div class="popup__close">
         <i class="bi bi-x"></i>
       </div>
-      <p>Text</p>
+      <h2>Вход в аккаунт</h2>
+      <form class="popup__form">
+        <div class="mb-3">
+          <label for="exampleName" class="form-label">Name</label>
+          <input type="text" class="form-control name" id="exampleName" aria-describedby="nameHelp">
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input type="email" class="form-control email" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input type="password" class="form-control password" id="exampleInputPassword1">
+        </div>
+        <button type="submit" class="btn btn-primary">Войти</button>
+      </form>
     </div>
   </section>
   <footer>

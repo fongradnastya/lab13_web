@@ -10,6 +10,17 @@ $font_size: 14px;
     margin: 0;
 }
 
+$success: #53ed8c;
+
+$mistake: rgb(228, 112, 112);
+
+.input-success{
+    border: 1px solid $success;
+}
+
+.input-mistake{
+    border: 1px solid $mistake;
+}
 .main__new{
     transform: translate(0px, 120%);
     opacity: 0;

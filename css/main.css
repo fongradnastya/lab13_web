@@ -63,7 +63,6 @@ section {
   width: 600px;
   background: #fff;
   border-radius: 15px;
-  height: 200px;
   padding: 20px;
   transform: translate(-50%, -50%);
 }
@@ -116,6 +115,14 @@ footer {
   background: rgb(251, 239, 239);
   background: radial-gradient(circle, rgb(236, 238, 222) 0%, rgb(251, 239, 239) 10%, rgb(193, 213, 236) 100%);
   margin: 0;
+}
+
+.input-success {
+  border: 1px solid #53ed8c;
+}
+
+.input-mistake {
+  border: 1px solid rgb(228, 112, 112);
 }
 
 .main__new {
