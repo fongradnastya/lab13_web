@@ -89,4 +89,11 @@ function showUser(){
     let username = getCookie("user");
     $(".user__name").text(username);
     $(".user").show();
+    $(".open-popup").hide();
 }
+
+$(".exit").click(function(){
+    deleteCookie("user");
+    $(".user").hide();
+    $(".open-popup").show();
+})

@@ -24,7 +24,7 @@ section {
 .header__basket {
   display: flex;
   color: #fff;
-  margin-right: 20px;
+  margin-right: 40px;
 }
 
 .basket__img {
@@ -44,6 +44,17 @@ section {
 
 .header__title h5 {
   margin-bottom: -5px;
+}
+
+.user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+.user__img, .user__name {
+  margin-right: 10px;
 }
 
 /* popup */
