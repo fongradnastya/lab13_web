@@ -54,7 +54,7 @@ section {
 }
 
 .user__img, .user__name {
-  margin-right: 10px;
+  margin-right: 20px;
 }
 
 /* popup */
@@ -125,11 +125,19 @@ footer {
 h2 {
   margin-bottom: 30px;
   text-align: center;
+  margin-top: 70px;
 }
 
 h1 {
   margin: 20px 0 40px 0;
   text-align: center;
+}
+
+.ordering {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
 }
 
 .form-pay {

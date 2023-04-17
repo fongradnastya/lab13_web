@@ -16,10 +16,10 @@ function checkIsEmpty(){
 function disableForm(){
     $("#check1").prop("checked", false);
     $(".addres").hide();
-    $("input").each(function(){
+    $(".main-form").find("input").each(function(){
         $(this).attr("disabled", true);
     });
-    $("button").attr("disabled", true);
+    $(".main-form").find("button").attr("disabled", true);
 }
 
 function setPrice(){
