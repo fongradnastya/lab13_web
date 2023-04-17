@@ -1,5 +1,6 @@
 $('.popup').hide();
 $('.user').hide();
+showUser();
 
 $('.popup__close').click(function(){
     $('.popup').hide();
@@ -9,11 +10,11 @@ $(".open-popup").click(function(){
     $('.popup').show();
 })
 
-function checkInput(){
+function checkForm(){
     hasMistake = false;
-    checkTextInput($(".name"));
-    checkTextInput($(".email"));
-    checkTextInput($(".password"));
+    checkFormField($(".name"));
+    checkFormField($(".email"));
+    checkFormField($(".password"));
     if(! hasMistake){
         console.log("Форма успешно отправлена");
         let name = $(".name").val();
@@ -66,7 +67,7 @@ function getCookie(name) {
     return matches ? decodeURIComponent(matches[1]) : undefined;
 }
 
-function checkTextInput(input){
+function checkFormField(input){
     const inputlValue = input.val();
     if(inputlValue === ''){
         input.addClass("input-mistake");
@@ -82,14 +83,16 @@ function checkTextInput(input){
 $(".popup__form").on("submit", (e)=>{
     console.log(1);
     e.preventDefault();
-    checkInput();
+    checkForm();
 });
 
 function showUser(){
     let username = getCookie("user");
-    $(".user__name").text(username);
-    $(".user").show();
-    $(".open-popup").hide();
+    if(username){
+        $(".user__name").text(username);
+        $(".user").show();
+        $(".open-popup").hide();
+    }
 }
 
 $(".exit").click(function(){
