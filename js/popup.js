@@ -2,12 +2,19 @@ $('.popup').hide();
 $('.user').hide();
 showUser();
 
+jQuery.fx.speeds.slow = 1000;
+jQuery.fx.speeds.fast = 100;
+
 $('.popup__close').click(function(){
-    $('.popup').hide();
+    $('.popup__card').slideToggle("slow");
+    $('.popup').fadeOut(1000);
 })
 
 $(".open-popup").click(function(){
-    $('.popup').show();
+    $('.popup').fadeOut(0);
+    $('.popup').fadeIn("fast");
+    $('.popup__card').fadeOut(0);
+    $('.popup__card').slideDown("slow");
 })
 
 function checkForm(){
